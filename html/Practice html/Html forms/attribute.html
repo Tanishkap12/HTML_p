@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Taget attribute</h2>
+    <p>The target attribute specifies where to display the response that is received after submitting the form.</p>
+    <p>Types of target attribute</p>
+    <h2>Blank</h2>
+    <form action="/action_page.php" target="_blank">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value=""><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value=""><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h2>Self</h2>
+    <form action="/action_page.php" target="_self">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value=""><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value=""><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h2>Method attribute</h2>
+
+    <p>This form will be submitted using the GET method.
+    <p>After you submit, notice that the form values is visible in the address bar of the new browser tab.</p>
+    </p>
+
+    <form action="/action_page.php" target="_blank" method="get">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>The Post Attribute</h2>
+
+    <p>This form will be submitted using the POST method:</p>
+
+    <form action="/action_page.php" target="_blank" method="post">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <p>After you submit, notice that, unlike the GET method, the form values is NOT visible in the address bar of the
+        new browser tab.</p>
+
+    <h1>The form autocomplete attribute</h1>
+
+    <p>Then, try to set autocomplete to "off".</p>
+
+    <form action="/action_page.php" autocomplete="on">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"><br><br>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
